@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		0AF38A6528722FCC002CE4ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF38A6428722FCC002CE4ED /* AppDelegate.swift */; };
 		0AF38A6728722FCC002CE4ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF38A6628722FCC002CE4ED /* SceneDelegate.swift */; };
-		0AF38A6928722FCC002CE4ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF38A6828722FCC002CE4ED /* ViewController.swift */; };
-		0AF38A6C28722FCC002CE4ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF38A6A28722FCC002CE4ED /* Main.storyboard */; };
+		0AF38A6928722FCC002CE4ED /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF38A6828722FCC002CE4ED /* HomeViewController.swift */; };
 		0AF38A6E28722FCE002CE4ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AF38A6D28722FCE002CE4ED /* Assets.xcassets */; };
 		0AF38A7128722FCE002CE4ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF38A6F28722FCE002CE4ED /* LaunchScreen.storyboard */; };
 		0AF38A7C28722FCE002CE4ED /* AgentDexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF38A7B28722FCE002CE4ED /* AgentDexTests.swift */; };
 		0AF38A8628722FCE002CE4ED /* AgentDexUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF38A8528722FCE002CE4ED /* AgentDexUITests.swift */; };
 		0AF38A8828722FCE002CE4ED /* AgentDexUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF38A8728722FCE002CE4ED /* AgentDexUITestsLaunchTests.swift */; };
+		0AF38A9628723180002CE4ED /* AgentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF38A9528723180002CE4ED /* AgentEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +39,7 @@
 		0AF38A6128722FCC002CE4ED /* AgentDex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgentDex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF38A6428722FCC002CE4ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AF38A6628722FCC002CE4ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0AF38A6828722FCC002CE4ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0AF38A6B28722FCC002CE4ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0AF38A6828722FCC002CE4ED /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0AF38A6D28722FCE002CE4ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AF38A7028722FCE002CE4ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AF38A7228722FCE002CE4ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		0AF38A8128722FCE002CE4ED /* AgentDexUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgentDexUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF38A8528722FCE002CE4ED /* AgentDexUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDexUITests.swift; sourceTree = "<group>"; };
 		0AF38A8728722FCE002CE4ED /* AgentDexUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDexUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0AF38A9528723180002CE4ED /* AgentEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +99,10 @@
 		0AF38A6328722FCC002CE4ED /* AgentDex */ = {
 			isa = PBXGroup;
 			children = (
+				0AF38A9728723256002CE4ED /* ViewControllers */,
+				0AF38A942872316D002CE4ED /* Entities */,
 				0AF38A6428722FCC002CE4ED /* AppDelegate.swift */,
 				0AF38A6628722FCC002CE4ED /* SceneDelegate.swift */,
-				0AF38A6828722FCC002CE4ED /* ViewController.swift */,
-				0AF38A6A28722FCC002CE4ED /* Main.storyboard */,
 				0AF38A6D28722FCE002CE4ED /* Assets.xcassets */,
 				0AF38A6F28722FCE002CE4ED /* LaunchScreen.storyboard */,
 				0AF38A7228722FCE002CE4ED /* Info.plist */,
@@ -125,6 +125,22 @@
 				0AF38A8728722FCE002CE4ED /* AgentDexUITestsLaunchTests.swift */,
 			);
 			path = AgentDexUITests;
+			sourceTree = "<group>";
+		};
+		0AF38A942872316D002CE4ED /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				0AF38A9528723180002CE4ED /* AgentEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		0AF38A9728723256002CE4ED /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0AF38A6828722FCC002CE4ED /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +249,6 @@
 			files = (
 				0AF38A7128722FCE002CE4ED /* LaunchScreen.storyboard in Resources */,
 				0AF38A6E28722FCE002CE4ED /* Assets.xcassets in Resources */,
-				0AF38A6C28722FCC002CE4ED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AF38A6928722FCC002CE4ED /* ViewController.swift in Sources */,
+				0AF38A9628723180002CE4ED /* AgentEntity.swift in Sources */,
+				0AF38A6928722FCC002CE4ED /* HomeViewController.swift in Sources */,
 				0AF38A6528722FCC002CE4ED /* AppDelegate.swift in Sources */,
 				0AF38A6728722FCC002CE4ED /* SceneDelegate.swift in Sources */,
 			);
@@ -297,14 +313,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0AF38A6A28722FCC002CE4ED /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0AF38A6B28722FCC002CE4ED /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0AF38A6F28722FCE002CE4ED /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +450,6 @@
 				INFOPLIST_FILE = AgentDex/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -454,7 +461,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -470,7 +477,6 @@
 				INFOPLIST_FILE = AgentDex/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -482,7 +488,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
